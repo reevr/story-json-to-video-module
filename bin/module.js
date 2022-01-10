@@ -81,5 +81,5 @@ async function cleanUp(outputFolder) {
 }
 
 
-module.exports.run = async () => true;
+module.exports.run = run;
 module.exports.cleanUp = cleanUp;
