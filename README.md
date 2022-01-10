@@ -44,19 +44,7 @@ storyJsonToVideo.run(json, { outputFolder: 'test-2' })
     .catch(err => console.error(err));
 ```
 
-If everything works, the program will create `story.mp4` in the same directory.
-
-To list additional options:
-
-```
-story-json-to-video --help
-```
-
-### Options
-
-Use `--font` option to provide custom fonts, e.g. `--font MyFont=./my-font.otf`.
-
-This uses [registerFont](https://github.com/Automattic/node-canvas#registerfont-for-bundled-fonts) from `node-canvas`.
+If everything works, the program will create `story.mp4` in the output directory mentioned.
 
 ## License
 
