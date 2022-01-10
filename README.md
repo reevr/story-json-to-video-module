@@ -8,6 +8,19 @@ Compile [story-json](https://github.com/micnews/story-json) documents into video
 
 ## Installation
 
+To install this package, mention this repo url in the package.json file as follows: 
+```
+{
+  .....
+  "dependencies": {
+
+    "story-json-to-video": "https://github.com/reevr/story-json-to-video-module",
+  },
+  .....
+}
+
+```
+
 This package requires [node.js](https://nodejs.org) version 8 or later.
 
 This package uses `ffmpeg` to process videos, which needs to be installed in your `PATH` directory.
