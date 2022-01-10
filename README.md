@@ -32,10 +32,16 @@ npm config set yoga-layout:platform node -g
 
 ## Usage
 
-To compile `story.json` into video, run:
+To compile `story.json` into video, use the following code:
 
 ```
-story-json-to-video story.json
+const storyJsonToVideo = require('story-json-to-video');
+const json = require('../story.json');
+
+storyJsonToVideo.run(json, { outputFolder: 'test-2' })
+    .then(r => console.log(r))
+    .then(r => storyJsonToVideo.cleanUp('test-2'))
+    .catch(err => console.error(err));
 ```
 
 If everything works, the program will create `story.mp4` in the same directory.
